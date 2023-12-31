@@ -1,0 +1,41 @@
+:root {
+	--border-radius-default: 0.25rem; // Ejemplo para bordes redondeados
+	--spacing-small: 1rem; /* 16px */
+	--spacing-medium: 1.5625rem; /* 25px */
+	--footer-height: 5rem; /* 80px */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.main-container {
+	min-height: calc(100vh - 8.5rem); /* 136px convertidos a rem */
+}
+
+table {
+	width: 100%;
+	text-align: center;
+	border-collapse: collapse; /* Para un mejor manejo de bordes */
+}
+
+tr {
+	border: 1px solid rgb(36, 109, 14);
+}
+
+th, td {
+	padding: var(--spacing-small);
+}
+
+footer {
+	height: var(--footer-height);
+	text-align: center;
+	line-height: var(--footer-height);
+}

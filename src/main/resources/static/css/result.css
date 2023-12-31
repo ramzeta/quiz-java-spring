@@ -1,0 +1,50 @@
+:root {
+  --spacing-small: 1rem;
+  --spacing-large: 6.25rem;
+  --max-width-card: 50rem;
+  --max-width-img: 21.875rem;
+  --footer-height: 5rem;
+  --negative-margin-img: -11.25rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.main-container {
+  min-height: calc(100vh - 8.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card {
+  width: 100%;
+  max-width: var(--max-width-card);
+  margin-top: var(--spacing-large);
+}
+
+img {
+  width: 100%;
+  max-width: var(--max-width-img);
+  position: relative;
+  display: block;
+  margin: var(--negative-margin-img) auto var(--spacing-small) auto;
+}
+
+.card button {
+  width: 45%;
+}
+
+footer {
+  height: var(--footer-height);
+  text-align: center;
+  line-height: var(--footer-height);
+}
